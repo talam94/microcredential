@@ -1,0 +1,21 @@
+*{box-sizing: border-box;}
+.animation_container{
+  border: ridge 20px gray;
+  width: 75%;
+  margin: auto;
+  margin-bottom: 2em;
+  position: relative;
+}
+
+.london {
+  width: 100%;
+
+}
+.camera {
+  width: 30%;
+  position: absolute;
+  bottom: 40%;
+  left: -2%;
+
+
+}
