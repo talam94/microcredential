@@ -9,8 +9,18 @@
 
 .london {
   width: 100%;
+  filter: invert(10%);
+  animation-name: animationFilter;
+  animation-delay: 4s;
+  animation-duration: 0.2s;
+}
+@keyframes animationFilter {
+  0%{filter: invert(0%);}
+  50%{filter: invert(100%);}
+  100%{filter: invert(10%);}
 
 }
+
 .camera {
   width: 25%;
   position: absolute;
@@ -27,7 +37,8 @@
   to{transform: translateX(200%);}
 }
 .heart1, .heart2, .heart3, .heart4, .heart5,
-.heart6, .heart7, .heart8, .heart9, .heart10 {
+.heart6, .heart7, .heart8, .heart9, .heart10,
+.heart11, .heart12 {
   position: absolute;
 
 }
@@ -35,12 +46,14 @@
 .heart2 {width: 17%; bottom: 50%; right: 10%;}
 .heart3 {width: 13%; top: 10%; left: 20%}
 .heart4 {width: 15%; bottom: 40%; right:30%;}
-.heart5 {width: 16%; top: 10%; left: 40%; }
+.heart5 {width: 5%; top: 18%; left: 41%; }
 .heart6 {width: 12%; bottom: 30%; left: 30%;}
-.heart7 {width: 14%; bottom: 35%; left: 20%;}
+.heart7 {width: 5%; top: 14%; left: 47%;}
 .heart8 {width: 14%; top: 0%; right: 10%}
 .heart9 {width: 13%; bottom: 40%; left: 10%}
 .heart10{width: 14%; top: 20%; right: 20%}
+.heart11{width: 10%; top: 30%; left: 10%}
+.heart12{width: 5%; top: 18%; left: 53%}
 
 .saycheese {
   position: absolute;
@@ -63,15 +76,30 @@
    }
 
    .heart1, .heart2, .heart3, .heart4, .heart5,
-   .heart6, .heart7, .heart8, .heart9, .heart10 {
+   .heart6, .heart7, .heart8, .heart9, .heart10,
+   .heart11, .heart12 {
    animation-name: heartClick;
-   animation-duration: 0.1s;
-   animation-iteration-count: 10;
-   animation-delay: 1s
+   animation-iteration-count: infinite;
+   animation-delay: 5s;
+   opacity: 0;
+   animation-fill-mode: forwards;
  }
-
    @keyframes heartClick {
      0%{opacity: 0.5;}
+     50%{opacity: 0.7;}
      100%{opacity: 1;}
 
    }
+
+   .heart1 {animation-duration: 0.3s;}
+   .heart2 {animation-duration: 0.5s;}
+   .heart3 {animation-duration: 0.3s;}
+   .heart4 {animation-duration: 0.7s;}
+   .heart5 {animation-duration: 0.8s;}
+   .heart6 {animation-duration: 0.9s;}
+   .heart7 {animation-duration: 0.1s;}
+   .heart8 {animation-duration: 0.2s;}
+   .heart9 {animation-duration: 0.4s;}
+   .heart10 {animation-duration: 0.8s;}
+   .heart11 {animation-duration: 0.3s;}
+   .heart12{animation-duration: 0.5s;}
