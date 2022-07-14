@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Activity 5 - Type your name</title>
+  </head>
+  <body>
+    <h1>Type your name: activity 5</h1>
+    <script type="text/javascript">
+            let number1 = 56;
+            let number2 = -80;
+            let number3 = 3/4;
+            let boolean1 = true;
+
+            let color ="beige";
+            let msg = "Hello World!"
+
+            console.log(number2);
+            console.log("Good evening!");
+            console.log("The color is: "+color)
+            console.log(`The color is: ${color}`);
+
+
+            //let num1 = prompt("Enter number 1: ");
+            //num1 = parseInt(num1);
+            //let num2 = parseInt(prompt("Enter number 2: "));
+            //let summation = num1 + num2;
+            //console.log("===== Activity 5.1: variables and prompt method ======")
+
+
+
+            //STRINGS
+
+          let name = "Will Smith"
+          //let nameLength = name.length;
+          //console.log(`Length of Will Smith: ${nameLength}`)
+          //let upperName = name.toUpperCase();
+          //let lowerName = name.toLowerCase();
+          //let newName = name.slice(2,8);
+          //console.log(`${newName}`)
+
+          //ARRAYS
+
+          //let everything =[-23, 'color', true, "Peter Pan", 88];
+          //let copyArray = everything;
+          //let sliceArray = everything.slice();
+
+          //Activity 5 due Thursday night//
+
+          //===Variables and Prompt Methods=====//
+          let name1 = prompt("What is your Name?");
+          let age1 = prompt("How old are you?");
+          console.log("Welcome to the program "+ name1 +". Lucky number: "+ age1 +"");
+          console.log(`Good morning ${name1}. You entered number: ${age1}`);
+          //=====Strings and string Methods====//
+          let word1 = "Language"
+          let charLocator = word1.charAt(2)
+          console.log (`The third letter of the word "Language" is: ${charLocator}`);
+          let country = "Canada"
+          let countryLength = country.length;
+          let upperCountry = country.toUpperCase();
+          let lasttwo = country.slice(4);
+          let firsttwo = country.slice(-6,-4)
+          console.log("The length of word Canada is "+ country.length +"");
+          console.log(`Uppercase: ${upperCountry}`);
+          console.log(`The last two character of the word Canada is ${lasttwo}`)
+          console.log(`The first two character of the word Canada going from right to left is ${firsttwo} `)
+          //=====Arrays and array mehtods======//
+
+          let mixedArray =[20, 'red', false, 'pink', 3];
+          console.log("Mixed array with initial values: " + mixedArray + " ");
+
+
+          let promptArray = prompt("What is you favorite animal?");
+          mixedArray.push(promptArray);
+          console.log("Mixed array with a new animal added to the end: "+ mixedArray +" ")
+
+
+          let promptArray2 = prompt("Enter a negative number")
+          mixedArray.unshift(promptArray2);
+          console.log(`Mixed array with a new NEGATIVE NUMBER added to the front, beginning, of the array: ${mixedArray}`)
+
+
+          let copyArray = mixedArray.slice();
+          mixedArray.reverse();
+          console.log(`Mixed array ${copyArray} and reverse of copy array ${mixedArray}`)
+
+    </script>)
+  </body>
+</html>
+
+<!----let name= prompt("Enter a name: ", "WHERE AM I?");---->
+<!---- let num2 = prompt("Enter number 1: ");---->
