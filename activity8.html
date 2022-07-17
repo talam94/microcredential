@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tamzimul Alam - function</title>
+  </head>
+  <body>
+    <h1>Tamzimul Alam - function</h1>
+    <script type="text/javascript">
+
+/*
+      //example 1) without parameters or return value: define a function that will print a message in the console
+      function msg(){
+        console.log("Hello!")
+      }
+
+      //example 2)without parameters or return a value: define a function called printCount that prints out the number from 3 to 1, inclusive,
+      //everytime the function is called.
+      function printCount(){
+        for(let i=3; i>=1; i -=1){
+          console.log(i)
+        }
+      }
+
+    //example 3) define a function that takes a parameter as name and print the argument value in the console
+    function greeting(name){
+      console.log(`Hello ${name}`)
+    }
+
+    //example 4) with parameter: define a fnction that will take a message as an arguemnt and convert its value in toUpperCase
+
+    function upperMessage(message){
+      let upper = message.toUpperCase();
+      console.log(upper)
+    }
+
+    //Example 5) define a function that will take two parameters. firstName and lastName, and print the first name with the inital letter of the last name.
+
+    function greet(firstName, lastName){
+      console.log(`Hello ${firstName} ${lastName[0].toUpperCase()}`)
+    }
+
+    //example 6) define a function that has two parameters, message and numCounts. The function will print the message numCount times.
+
+    function printMsg(message, numCount){
+      for(counter = 0; counter<numCount ; counter++) {
+        console.log(`Counter ${counter} = ${message}`)
+      }
+    }
+
+    //console.log(`Counter ${counter} = ${message}`)
+    //example 7) in some dice games like Craps, a roll of two 1's is called "Snake Eyes". It is no ta good roll.
+
+    function isSnakeEyes(dice1, dice2){
+      if(dice1===1 && dice2===1){
+        console.log('Snake Eyes!')
+      }
+      else{console.log('Not Snake Eyes!')}
+
+    }
+
+    //Example 8) without parameters but reutrn value: define funciton that return the sum of two Numbers
+
+    function sumXY(){
+      let x=7, y=-3
+      return x+y
+    }
+
+
+    //example 9: with parameters and return value: define a function that takes a number as parameter. The function will double the number and reutrn the result.
+    let userNum = parseInt(prompt('Enter a number'))
+    function doubleNumber(userNum) {
+      let dNumber = number*2;
+      return dNumber
+    }
+
+   let collection = doubleNumber(userNum)
+
+   //example 10) with parameters and return value: define a function that adds two numbers and return the sum. Save the return the value in a variable number1 and number2
+   let a = 5/6, b = 3, c = 9, d = -5
+
+   function sumNum(num1, num2) {
+     let sum = num1+num2
+     return sum
+   }
+
+   let number1 = sumNum(10, d)
+   let number2 = sumNum(a,c)
+
+   //Example 11)
+
+   function isShortsWeather(temperature){
+     if (temperature>=75){return true;}
+     else{return false;}
+   }
+
+  //Example 12) define a function that accepts a single array arguement. The function should return the
+
+  function lastElement(arrayInput){
+    if(arrayInput ===undefined){return null}
+    else if(arrayInput.length !==0){
+      let lastIndex = arrayInput.length - 1;
+      return arrayInput[lastIndex]
+    }
+    else{return null}
+  }
+
+//example 13) Math function is JS
+let numPI = Math.PI;
+console.log(`PI value = ${numPI}`)
+console.log(`PI with Math.round() = ${Math.round(numPI)}`)
+console.log(`PI with a Math.ceil() = ${Math.ceil(numPI)}`)
+console.log(`PI with a Math.floor() = ${Math.ceil(numPI)}`)
+console.log(`PI with a Math.trunc() = ${Math.trunc(numPI)}`)
+//math.pow(base, exponent), returns the value of base to the power of exponent
+console.log(`PI with a Math.pow(b,e) = ${Math.pow(2,3)}`)
+//Math.sqrt() returns the square root of a number
+console.log(`PI with a Math.sqrt(b,e) = ${Math.sqrt(81)}`)
+
+//Math.random()returns a random number between 0 (inclusive), and 1(exclusive)
+console.log(`Math.random() = ${Math.random()}`)
+//example 14) cretae a funciton that randomly generate a number between 10 and 20 inclusive
+ function pickNum(){
+   let pick =10 + Math.round(Math.random()*10)
+   return pick
+ }
+
+ //example 15) )Create a function that randomly pick a color from an array.
+ let colors =['red', 'green', 'blue', 'yellow', 'orange']
+
+ function colorPick(lastIndex){
+   let pick =Math.round(Math.random()*lastIndex)
+   return pick
+ }
+
+ //call function colorPick
+ pickedIndex = colorPick(colors.length - 1)
+ console.log(`The picked color is ${colors[pickedIndex]}`)
+
+ function checkName(){
+   console.log(`Greetings `)
+ }
+
+ */
+
+function checkName()
+  while (true) {
+    let name = prompt('Enter your name: ');
+    if (name == null || name === " "){
+      console.log('You forgot to enter a name. Enter a name again!');
+    }
+    else if (parseInt(name)){
+      console.log(`${name} is invalid. Enter a name again!`);
+    }
+    else{
+      console.log(`Welcome ${name.toUpperCase()} to the class!`)
+      break;
+    }
+  }
+
+  function checkNum()
+    while(true){
+      let number = prompt("Enter a number: ");
+
+      if (number == null || number === " "){
+         console.log(true)
+       }
+      else if(parseInt(number)){
+        if (parseInt(number) % 2 == 0){
+          return true;}
+        }
+      else{
+          return false;
+      }
+    }
+
+    function lottery(numberOfgames){
+      for (let i = 0; i < numberOfgames; i++) {
+        let numbers = [ ];
+
+      for (let t = 0; t < 5; t++) {
+        numbers[t] = Math.random() * 99;
+      }
+
+      console.log(numbers);
+      }
+    }
+
+    
+  </script>
+
+  </body>
+</html>
