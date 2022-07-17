@@ -1,0 +1,78 @@
+*{box-sizing: border-box;}
+.header1 {
+  background-color: rgba(95, 24, 73);
+  font-family: Lucida Handwriting;
+  color: rgba(219, 196, 32);
+  font-size: 400%;
+  width: 100%;
+  text-align: center;
+  height: 300px;
+  padding: 80px;
+  margin-top: 0%;
+
+}
+.main_container{
+  border: solid 1px red;
+  width: 90%;
+  margin-top: 50%;
+  background-color: lightblue;
+}
+.trocRow {
+  border: solid green;
+  margin-top: 2em;
+}
+.trocImg {
+  width: 100%;
+
+}
+
+.louvRow, .operaRow, .arcRow {
+  border: solid green;
+  margin-top: 2em;
+}
+
+.louvImg {
+  width: 45%;
+  margin: auto;
+}
+
+.louvText {
+  width: 45%;
+  float: right;
+  color: purple;
+
+}
+.operaImg {
+  width: 45%;
+  margin: auto;
+}
+
+.operaText {
+  width: 50%;
+  float: left;
+  color: purple;
+}
+
+
+.arcImg{
+width: 45%;
+width: auto
+
+}
+
+.arcText{
+width:50%
+float:right;
+color: purple;
+}
+.contact{border: solid gray;
+  background-color: gray;
+  display: inline-block;
+  width: 100%;
+}
+.contact1, .contact2, .contact3{border: solid red;
+  width: 30%;
+  float: left;
+  margin-left: 3%;
+  padding: 1em 2em;
+}

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tamzimul Alam: Activity 6</title>
+  </head>
+  <body>
+    <h1>Tamzimul Alam: Activity 6</h1>
+    <script type="text/javascript">
+
+      /*
+      //Example 1
+      let goodMood = false;
+      let gotSleep = true;
+
+      if(goodMood === gotSleep){
+        console.log("Today is a good day!");
+      }
+      else{ console.log("I am moody!");
+     }
+
+      // example 2) check if two numbers are exatly equal
+
+      let num1 = -1, num2 = -7, checkNum;
+
+      if(num1===num2) {
+        checkNum = true;
+      }
+      else{
+        checkNum = false;
+      }
+
+      console.log(`Are the numbers exact equal to? ${checkNum}`)
+
+     //example 3) check if two numbers are exact equal to, greater than, or less than
+
+     if(num1===num2){
+       console.log(`Numbers are the same!`)
+     }
+     else if(num1>num2){
+       console.log(`${num1} is greater than ${num2}`)
+     }
+     else if(num2>num1){
+       console.log(`${num1} is less than ${num2}`)
+     }
+    else{
+      console.log('INVALID')
+    }
+
+   //example 4) pick a value from an array
+
+    let colors = ['red', 'blue', 'green', 'yellow', 'orange']
+    let userPick = parseInt(prompt("Select a color from 1 to 5")) //parseInt() convert input into an integer
+    let selectorColor = colors[userPick -1]
+
+
+    if(selectorColor === 'red'){
+      console.log('The selected color is red!')
+    }
+    else if (selectorColor == 'blue'){
+      console.log('The selected color is blue!')
+    }
+    else if(selectorColor =='green'){
+      console.log('The selected color is green!')
+    }
+    else if(selectorColor =='yellow'){
+      console.log('The selected color is yellow!')
+    }
+    else if(selectorColor =='orange'){
+      console.log('The selected color is orange!')
+}
+   else{
+     console.log('INVALID!');
+   }
+    //example 5) write JS code that opens a dialog box and asks the user  to enter a number.
+    // if the user enters a string, it will console a message as: ______ is a string. Otherwise, if the user
+    // enters a number, it will console a messages as: _____ is a number.
+
+    let userInput = prompt("Enter a number: ")
+    let checkInput = isNaN(parseInt(userInput))
+
+    if(checkInput){
+      console.log(`${userInput} is a string`)
+
+    }
+    else{
+      console.log(`${userInput} is a number`)
+    }
+/*
+   //Example 6) If password is at least six characters not counting the space. If the password has more than six characters but it also has space, then the program will display an error message.
+    let password = prompt("Enter a password with 6+ characters: ")
+
+    if (password.length>=6){
+      console.log('password has more than 6 characters!')
+      if (password.indexOf(' ')===-1){
+        console.log(`${password} Great! Password has no space!`)
+      }
+    else{console.log('Warning! Password can not have space!')}
+    }
+    else{
+      console.log('INVALID! Password has less than 6 characters!')
+    }
+
+
+    //example 7
+    let name = prompt("Enter a name: ")
+
+    if(name){console.log(`Welcome to the program ${name}`)}
+    else {console.log('You did not enter a name!')
+  }
+
+      //Example 8)Simplify the inner if-else statement of example 6 by using the AND operator : Logical statements
+      let password = prompt("Enter a password with 6+ characters:")
+
+      if (password.length>=6 && password.indexOf(' ')===-1){
+        console.log(`${password} is valid!`)
+        }
+      else{
+        console.log(`WARNI!${password} is an incorrect password format!`)
+      }
+
+*/
+       //Example 10) write a JS code that asks the user to rate a book as:
+       //1) Excellent, 2) Good/Average 3)Bored! If the user select "Bored", the program
+       //will prompt another window asking why the book was rated as "Bored"
+/*
+       let rate = prompt('Enter a rate for the "The Book":\n 1)Excellent \n 2) Good/Average \n 3)Bored! \n Select a number from 1 to 3.')
+        if(rate === '3'){
+          let comments =('We are sorry that you find "The Book" boring. Please comment: ')
+          console.log(`Thank you for your feedback: ${comments}`)
+        }
+        else if(rate==='1' || rate=== '2'){
+          console.log('Thank you for choosing "The Book"')
+          }
+
+        else{
+          console.log('INVALID RATE!')
+        }
+
+      //Example 11) ticket's Price
+
+/*
+     let age = -1;
+
+      if (age>=0 && age<=7 || age>=65){console.log('FREE TICKETS')}
+      else if(age>=8 && age<=17){console.log('$5.00 per ticket')}
+      else if(age>=18 && age<=65){console.log('$8.00 per ticket')}
+      else {console.log('INVALID AGE!')}
+*/
+/*
+let colors = ['red', 'blue', 'green', 'yellow', 'orange']
+let userPick = parseInt(prompt("Select a color from 1 to 5")) //parseInt() convert input into an integer
+let selectorColor = colors[userPick -1]
+
+switch(selectorColor) {
+  case 'red'
+    console.log('The selected color is red!')
+    break;
+  case 'blue'
+    console.log('The selected color is blue!')
+    break;
+  case 'green'
+    console.log('The selected color is green!')
+    break;
+  case 'yellow'
+    console.log('The selected color is yellow!')
+    break;
+  case 'orange':
+    console.log('The selected color is orange')
+    break;
+  default:
+   console.log('INVALID!')
+}
+if(selectorColor === 'red'){
+  console.log('The selected color is red!')
+}
+else if (selectorColor == 'blue'){
+  console.log('The selected color is blue!')
+}
+else if(selectorColor =='green'){
+  console.log('The selected color is green!')
+}
+else if(selectorColor =='yellow'){
+  console.log('The selected color is yellow!')
+}
+else if(selectorColor =='orange'){
+  console.log('The selected color is orange!')
+}
+else{
+ console.log('INVALID!');
+ */
+
+ //Class Activity 6
+
+ let userInput = prompt("Enter a value")
+ let stringInput = isNaN(parseInt(userInput))
+
+  if(stringInput){
+    console.log(`${userInput} is a string`)
+  }
+
+  else if(userInput>=0){
+    console.log(`${userInput} is a positive number.`)
+  }
+  else if (userInput<=0) {
+    console.log(`${userInput} is a negative number.`)
+
+ }
+ else{
+   console.log("Best of luck!")
+ }
+
+let colors = ['red', 'blue', 'green', 'yellow', 'orange']
+let userPick = parseInt(prompt('What is your favorite color? \n a) red \n b) blue \n c) green \n d)yellow \n e) orange \n Type in the letter which corresponds to your favorite color'))
+let selectorColor = colors[userPick -1]
+
+switch (selectorColor){
+  case 'red':
+   console.log('The selected color is red!')
+     break;
+  case 'blue':
+    console.log('The selected color is blue!')
+       break;
+  case 'green':
+     console.log('The selected color is green!')
+        break;
+  case 'yellow':
+     console.log('The selected color is yellow!')
+        break;
+  case 'orange':
+      console.log('The selected color is orange!')
+        break;
+  default:
+      console.log('Color is not in the list!')
+}
+
+    </script>
+  </body>
+</html>
+*/
