@@ -1,0 +1,91 @@
+*{box-sizing: border-box;}
+.subpage_container{
+
+  width: 100%;
+  background-color: lightblue;
+
+}
+.louvTitle {text-align: center;
+  font-family: Matura MT Script Capitals;
+  color:rgb(78, 129, 238);
+  text-shadow: 2px 2px 5px blue;
+  font-size: 35px;
+  animation: zoomText 3s 3;
+
+
+}
+@keyframes zoomText {
+  0%{transform: scale(0.5);}
+  50%{transform: scale(2);}
+  100%{transform: scale(1);}
+
+}
+
+
+.cafeImg {
+  width: 30%;
+  margin-left: 2%;
+  border-radius: 2em;
+
+
+}
+
+.cafeText {
+  width: 30%;
+  margin-right: 2%;
+  font-size: 15px;
+  bottom: 30%;
+}
+.cafeLink {display: block;
+    background-color: green;
+    margin-top: 0.2em;
+    padding: 0.2em;
+    border-radius: 12px;
+    text-align: center;
+    width: 20%;
+    float: right;
+    text-decoration: none;}
+    .cafeLink:hover{background-color: gold;
+    box-shadow: 0px 0px 5px 2px gray;
+
+  }
+
+
+    .museRow, .infoRow {
+      width: 100%;
+
+    }
+
+    .museImg {
+      width: 30%;
+      border-radius: 2em;
+      margin-left: 2%;
+    }
+
+
+    .museLink {display: block;
+        background-color: green;
+        padding: 0.2em;
+        border-radius: 12px;
+        text-align: center;
+        width: 20%;
+        margin-left: 40%;
+        text-decoration: none;}
+        .museLink:hover{background-color: gold;
+        box-shadow: 0px 0px 5px 2px gray;
+
+    }
+
+    .monaImg {
+      width: 30%;
+      border-radius: 2em;
+      margin-left: 2%;
+
+    }
+
+    .monaText {
+      font-family: serif;
+      font-size: 14px;
+      width: 30%;
+      padding-left: 20px;
+    }

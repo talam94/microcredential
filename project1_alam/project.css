@@ -1,0 +1,177 @@
+*{box-sizing: border-box;}
+.header1 {
+  background-color: rgb(12, 90, 105);
+  font-family: Chalkduster;
+  color: rgb(241, 199, 174);
+  font-size: 400%;
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  padding: 15px;
+  margin: 0%;
+
+}
+.main_container{
+  width: 100%;
+  margin-top:0%;
+  background-color: lightblue;
+
+}
+.trocRow {
+  margin-top: 0%;
+  position: relative;
+
+}
+.trocImg {
+  width: 100%;
+  filter: invert(10%);
+  animation-name: animationFilter;
+  animation-delay: 4s;
+  animation-duration: 0.2s;
+
+  }
+@keyframes animationFilter {
+  0%{filter: invert(0%);}
+  50%{filter: blur(100%);}
+  100%{filter: sepia(10%);}
+
+}
+.trocText {
+  font-family: Brush Script MT;
+  font-size: 50px;
+  color: rgba(95, 24, 73);
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  background-color: transparent;
+  animation-name: moveText;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+
+
+}
+   @keyframes moveText {
+     from{transform: translateY(0%);}
+     to{transform: translateY(200%);}
+
+
+   }
+
+.navBar {
+  font-size: 200px
+  color: inherit;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+.louvRow, .operaRow, .arcRow {
+
+  margin-top: 2em;
+  width: 100%;
+}
+
+.louvHeader, .operaHeader, .arcHeader {
+  font-family: Matura MT Script Capitals;
+  color:rgb(78, 129, 238);
+  text-shadow: 2px 2px 5px blue;
+  font-size: 35px;
+  text-align: Center;
+  border: solid 4px rgb(12, 90, 105);
+}
+
+.louvImg {
+  width: 45%;
+  margin: 2%;
+  border: solid 4px rgb(12, 90, 105);
+
+}
+
+.louvText {
+  width: 45%;
+  float: right;
+  color: rgb(12, 90, 105);
+  font-size: 15px;
+  background-color: transparent;
+  margin-right: 2%;
+  margin-top: 2%;
+  border: solid 2px brown;
+  padding: 2em;
+  border-radius: 4px;
+
+
+}
+
+.louvLink {display: block;
+  background-color: rgb(241, 199, 174);
+  margin-top: 1em;
+  padding: 0.2em;
+  border-radius: 12px;
+  text-align: center;
+  width: 20%;
+  margin-left: 10%;
+  text-decoration: none;}
+  .louvLink:hover{background-color: rgb(12, 90, 105);
+  box-shadow: 0px 0px 5px 2px gray;}
+
+
+.operaImg {
+  width: 45%;
+  margin: 2%;
+  border-radius: 2em;
+}
+
+.operaText {
+  width: 50%;
+  float: left;
+  color: brown;
+  background-color: transparent;
+  font-size: 16px;
+  border: solid 2px brown;
+  padding: 2%;
+  border-radius: 2em;
+}
+
+.arcImg{
+width: 45%;
+margin: 2%;
+height: 300px;
+border: solid 4px brown;
+
+
+}
+
+.arcText{
+width:45%;
+float:right;
+color: purple;
+font-size: 14px;
+background-color: transparent;
+margin-right: 3%;
+border-radius: 2em;
+border: solid 2px brown;
+border-width: 30%;
+padding: 2%;
+font-family: American Typewriter
+}
+.contact{border: solid gray;
+  background-color: rgb(12, 90, 105);
+  display: inline-block;
+  width: 100%;
+
+}
+.contact1, .contact2, .contact3 {
+  width: 30%;
+  float: left;
+  margin-left: 3%;
+  padding: 1em 2em;
+  color: white;
+  font-style: italic;
+  font-size: 20px;
+
+}
+
+.instaImg, .fbImg, .tweetImg { width:20%;
+margin: 5%;}
