@@ -1,0 +1,43 @@
+body{background-color: lightblue;}
+*{box-sizing: border-box;}
+.colorContainer{ width: 50%;
+height: 200px;
+border: ridge 10px gray;
+margin: 2em auto;
+}
+#btnColor{background-color: gray;
+color: purple;
+padding: 0.5em;
+border-radius: 1em;
+margin: 5em 30%;
+width: 40%;
+}
+/* example 9*/
+.divContainer{display:inline-block; width: 100%;
+}
+.divColor{width: 30%; margin-left: 2%;
+height: 100px;
+border: inset 10px; float: left;
+margin-bottom: 2em;}
+
+.display9{
+  position: fixed; right: 0%; top: 0%; padding: 3em;
+  background-color: rgba(10,10,10,0.5); width: 50%; color: white;
+}
+html{scroll-behavior:smooth;}
+.toTop{
+  position: fixed; bottom: 10%; right: 10%;
+  width: 60px; height: 60px; border-radius: 50%;
+  background-color: rgba(20,20,20,0.9);
+  text-align: center; display: none;
+
+}
+.toTop a{
+  color: white;
+  text-decoration: none;
+
+}
+.toTop:hover{
+  box-shadow: 0px 0px 5px 2px gray;
+  opacity: 0.6;
+}

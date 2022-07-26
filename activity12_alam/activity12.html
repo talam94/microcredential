@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 12- Tamzimul Alam</title>
+    <link rel="stylesheet" href="activity12.css">
+  </head>
+
+  <body>
+    <h1 class="mainTitle">Four Seasons</h1>
+    <nav class="nav">
+      <a href="https://www1.nyc.gov/" target="_blank">NYC</a>
+      <a href="https://www.cuny.edu/" target="_blank">CUNY</a>
+      <a href="https://www.qcc.cuny.edu/" target="_blank">QCC</a>
+   </nav>
+
+ <section class="cardContainer">
+      <!---card 1--->
+      <div class="card">
+        <img src="images/spring.jpg" alt="image of spring">
+        <h3>Spring</h3>
+        <p>Gypsolphila is agenus of flowering plants win the carnation family, Caryophyllaceae</p>
+        <!---MODAL WINDOW--->
+        <a id="openitem1">ADD TO CART</a>
+      </div>
+
+      <!---card 2--->
+      <div class="card">
+        <img src="images/summer.jpg" alt="image of summer">
+        <h3>Summer</h3>
+        <p>Gypsolphila is agenus of flowering plants win the carnation family, Caryophyllaceae</p>
+      </div>
+      <!---card 3--->
+      <div class="card">
+        <img src="images/fall.jpg" alt="image of fall">
+        <h3>Fall</h3>
+        <p>Gypsolphila is agenus of flowering plants win the carnation family, Caryophyllaceae</p>
+      </div>
+      <!---card 4--->
+      <div class="card">
+        <img src="images/winter.jpg" alt="image of winter" id="img4">
+        <h3>Winter</h3>
+        <p>Gypsolphila is agenus of flowering plants win the carnation family, Caryophyllaceae</p>
+      </div>
+
+    </section>
+<hr>
+
+    <!---forms password and viewing password---->
+
+      <hr>
+
+      <input type="submit" value="SUBMIT FORM" class="input1">
+      <input type="text" name="username" value="" maxlength="20" placeholder="Up to 20 characters" class="input2">
+      <input type="password" name="password" value="" placeholder="up to 8 characters" maxlength="8" id="myPassword">
+      <a id="viewPassword">View Password</a>
+  <!----example 4 checkbox list ~ click multiple boxes---->
+<h3>Select your favorite animal</h3>
+<label for="cat">Cats</label>
+<input type="checkbox" name="animals" value="cat" id="cat">
+<br>
+<label>Dog<input type="checkbox" name="animals" value="dog"></label>
+<!---example 5 Radius ~ click only one box at a time---->
+<h3>Select a gender</h3>
+<label>Female <input type="radio" name="gender" value="female"></label>
+<label>Male <input type="radio" name="gender" value="male"></label>
+<label>Others <input type="radio" name="gender" value="others"></label>
+</form>
+
+
+<hr>
+
+<form action="https://www.google.com/search">
+  <input type="search" name="q" placeholder="Type your search for Google">
+  <button> Search Google</button>
+</form>
+
+<form action="https://www.youtube.com/results">
+  <input type="search" name="search_query" placeholder="Search">
+  <button> Search at Youtube</button>
+</form>
+<label for="date">Select appointment date</label>
+<input type="date" name="appointment" value="this.today" id="date">
+
+
+
+
+
+
+
+
+
+
+    <!---slideshow----->
+    <h1>MANUAL SLIDESHOW</h1>
+<section class="container_slideshow">
+  <div class="slide">
+    <img src="images/spring.jpg">
+    <p>Spring</p>
+  </div>
+  <div class="slide">
+    <img src="images/summer.jpg">
+    <p>Summer</p>
+  </div>
+  <div class="slide">
+    <img src="images/fall.jpg">
+    <p>Fall</p>
+  </div>
+  <div class="slide">
+    <img src="images/winter.jpg">
+    <p>Winter</p>
+  </div>
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+
+</section>
+
+<h1>AUTOMATIC SLIDESHOW</h1>
+
+<section class="container_slideshow">
+  <div class="slideAuto">
+    <img src="images/spring.jpg">
+    <p>Spring</p>
+  </div>
+  <div class="slideAuto">
+    <img src="images/summer.jpg">
+    <p>Summer</p>
+  </div>
+  <div class="slideAuto">
+    <img src="images/fall.jpg">
+    <p>Fall</p>
+  </div>
+  <div class="slideAuto">
+    <img src="images/winter.jpg">
+    <p>Winter</p>
+  </div>
+</section>
+
+
+
+<!---PRACTICE--->
+
+    <h1>Tamzimul Alam</h1>
+    <section class="container">
+      <header class="title">
+      TITLE
+      </header>
+      <main class="intro">
+        INTRODUCTION
+      </main>
+      <footer class="footer">CONTACT US</footer>
+    </section>
+
+
+
+
+
+
+    <!--modal window for item1--->
+    <form id="myForm" action="sentform.html" method="post">
+      <section class="modalWindow">
+       <div class="modalBody">
+        <header class="modalHeader"> <a href="#" id="closeModal">X</a></header>
+        <main class="modalInfo"> INFORMATION OF THE PRODUCT
+          <br></br>
+          <label for="firstN">First Name: <input type="text" name="firstName" id='firstN'> </label>
+          <br></br>
+          <label for="lastN">Last Name: <input type="text" name="lastName" id='lastN'> </label>
+        </main>
+        <footer class="modalFooter">
+          <input type="submit" value="SUBMIT" class="input1">
+        </footer>
+       </div>
+      </section>
+      </form>
+    <script type="text/javascript" src="activity12.js"></script>
+  </body>
+</html>
+
+<!---
+  https://www.google.com/search?q=cake
+  https://www.youtube.com
+  --->
