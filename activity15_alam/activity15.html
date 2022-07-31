@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tamzimul Alam-Activity 15</title>
+
+    <style media="screen">
+      #catFacts{background-color: red;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 50px;
+      }
+
+      #clearReset{background-color: green;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        margin-left: 200px;
+
+    }
+
+      .container{width: 480px;
+        background-color: lightgray;
+        height: 400px;
+        text-align: center;
+        margin-top: 50px;
+        margin-left: 50px;
+
+     }
+       .title{padding-top: 50px;
+              font-size: 30px;
+
+      }
+
+      .info{width: 80%;
+           height: 100px;
+           margin-left: auto;
+           margin-right: auto;
+
+       }
+
+       .num{margin-top: 20px;
+            font-size: 20px;
+
+       }
+
+       .factsAPI{margin-top: 20px;
+                 font-size: 20px;
+
+     }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Tamzimul Alam: Activity 15</h1>
+    <button id="catFacts">Click to get Cat Facts!</button>
+    <button id="clearReset">Clear and Reset</button>
+
+    <div class="container">
+      <div class="title"> <b>Cat Facts </b></div>
+      <div class="info">
+        <div class="num"><b></b></div>
+        <div class="factsAPI"></div>
+      </div>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script type="text/javascript">
+
+  //Class Activity for Cat Ninja
+
+      let counter = 0;
+
+      $('#catFacts').click(function(){
+        counter++;
+      $('.num').html(`<b>${counter}.</b>`)
+      fetch("https://catfact.ninja/fact")
+      .then((res)=>{
+        console.log("LOADED!: Obtained Cat fact", res)
+        res.json().then((data)=>
+        $('.factsAPI').html(data['fact']))
+      })
+    })
+
+    $('#clearReset').click(function(){
+      counter = 0
+      $('.num').html('')
+      $('.factsAPI').html('')
+    })
+
+
+
+
+
+
+
+
+
+
+  // making a specific request using API headers
+  const getYear = async()=> {
+    const config = {headers:{Accept:'application/json'}}
+    const res = await axios.get('https://swapi.dev/api/people/1/')
+    console.log("Using headers in axios",res)
+  }
+  // choosing specific response
+  const personID = async(id) =>{
+  try {
+    const res = await axios.get(`https://swapi.dev/api/people/${id}`)
+    console.log(res.data)
+   } catch (e) {
+    console.log("ERROR!", e)
+   }
+  }
+  // making request using axios
+  let axio = axios.get("https://swapi.dev/api/people/1/")
+  //console.log("Request using axios",axio)
+  .then(res => {
+    console.log("RESPONSE using axios", res)
+  })
+  // try and catch statement in fetch
+  // making multiple request using fetch
+  const loadPeople = async()=>{
+    try {
+      const res = await fetch("https://swapi.dev/api/people/1/")
+      const data = await res.json()
+      console.log(`Multiple response using fetch, 1st person`, data)
+      const res2 = await fetch("https://swapi.dev/api/people/1/")
+      const data2 = await res.json()
+      console.log(`Multiple response using fetch, 2nd person`, data2)
+
+    } catch (e) {
+      console.log("ERROR!", e)
+
+    }
+
+  }
+   // making an AJAX request using fetch
+      fetch("https://swapi.dev/api/people/1/")
+      .then((res)=>{
+        console.log("LOADED! using fetch", res)
+        res.json().then((data)=>console.log("JSON result using fetch", data))
+      })
+
+   // making a request using XHR
+      const req = new XMLHttpRequest();
+      req.onload = function(){
+        console.log('LOADED! using XHR');
+        console.log(this)
+      }
+     //console.log(this.response)
+      req.oneerror = function(){
+        console.log('ERROR');
+        console.log(this.response)
+        const person = JSON.parse(this.response)
+        console.log(`NAME: ${person.name}, HEIGHT: ${person.height}`)
+      }
+
+      req.open("GET", "https://swapi.dev/api/people/1/");
+      req.send();
+    </script>
+
+  </body>
+</html>
