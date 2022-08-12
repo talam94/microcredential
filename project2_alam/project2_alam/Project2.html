@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project2.css">
+    <title>project2</title>
+  </head>
+  <body>
+
+<section class="container">
+
+  <header class="oakley">OAKLEY</header>
+  <nav>
+    <ul>
+
+    <li><a href="Project2.html">HOME</a></li>
+    <li><a href="#img1">HIM</a>
+    <ul>
+        <li><a href="#">SUMMER WEAR</li>
+        <li><a href="#">FALL WEAR</li>
+        <li><a href="#">WINTER WEAR</li>
+        <li><a href="#">SPRING WEAR</li>
+
+     </ul>
+   </li>
+      <li><a href="#">HER</a>
+       <ul>
+         <li><a href="#">SUMMER WEAR</li>
+         <li><a href="#">FALL WEAR</li>
+         <li><a href="#">WINTER WEAR</li>
+         <li><a href="#">SPRING WEAR</li>
+
+       </ul>
+    </li>
+    <li><a href="#">CONTACT US</a>
+    <ul>
+      <li><a href="#">PHONE</li>
+      <li><a href="#">EMAIL</li>
+      <li><a href="#">SOCIAL MEDIA</li>
+
+     </ul>
+   </li>
+  </ul>
+
+</nav>
+<a id="login">LOG IN</a>
+<img src="shoppingcart.png" class="cartImg">
+
+
+
+<section class="slideContainer">
+  <div class="slide">
+   <img src="banner.jpg">
+     <p id="message">Summer Ending Sale!</p>
+     <p id="sale">40% Off</p>
+     <p id="ending">Ends August 25</p>
+  </div>
+  <div class="slide">
+   <img src="banner2.jpg">
+    <p id="message">Get Ready For Fall!</p>
+    <p id="sale"></p>
+    <p id="ending"></p>
+  </div>
+  <div class="slide">
+   <img src="banner3.jpg">
+    <p id="message">Summer Ending Sale!</p>
+    <p id="sale">40% Off</p>
+    <p id="ending">Ends August 25</p>
+  </div>
+  <a class="prev">&#10095;</a>
+  <a class="next">&#10094;</a>
+</section>
+
+
+<section class="cardContainer2">
+  <div class="card2">
+   <img id="img4" src="wthumbnail1.jpg" >
+   <p>Tea Green $120.00</p>
+   <a id="cart">ADD TO CART</a>
+  </div>
+
+
+
+  <div class="card2">
+   <img id="img5"  src="wthumbnail2.jpg" >
+   <p>Caramel Suit $150.00</p>
+   <a id="cart2">ADD TO CART</a>
+  </div>
+
+
+  <div class="card2">
+   <img id="img6"  src="thumbnail2.jpg">
+   <p>Pearl Gray Suit $150.00</p>
+   <a id="cart3">ADD TO CART</a>
+   </div>
+
+</section>
+
+<section class="cardContainer1">
+  <div class="card1">
+   <img id="img1" onmouseover="setNewImage()"
+                  onmouseout="setOldImage()" src="thumbnail1.jpg" >
+   <p>Latest Trends</p>
+   <a id="cart4">ADD TO CART</a>
+  </div>
+  <div class="card1">
+   <img id="img2" onmouseover="setNewImage2()"
+                  onmouseout="setOldImage2()" src="greenheels.jpg" >
+   <p>Shoe Sale</p>
+   <a id="cart5">ADD TO CART</a>
+  </div>
+  <div class="card1">
+   <img id="img3" onmouseover="setNewImage3()"
+                  onmouseout="setOldImage3()" src="watch.jpg">
+   <p>Accessories Sale</p>
+   <a id="cart6">ADD TO CART</a>
+
+  </div>
+</section>
+
+<!-----------------------------------FOOTER--------------------------------------------->
+<footer id="footer">
+<div class="contactForm">
+  <form id="myForm2" action="sentProject2Form.html" method="post">
+
+
+  <h3>Contact Us</h3>
+
+  <label class="customerFirstN" for="firstN">First Name: <input type="text"
+          name="firstName" id='firstN'> </label>
+   <label class="customerLastN"for="lastN">Last Name: <input type="text"
+          name="lastName" id="lastN"> </label>
+  <label class="customerEmail"for="lastN"> Email: <input type="text"
+          name="emailName" id="customerEmail"> </label>
+  <label class="customerPhone"for="lastN">Phone: <input type="text"
+          name="phoneName" id="customerPhone"> </label>
+  <label class="companyName"for="companyN">Company Name: <input type="text"
+          name="companyName" id="companyPhone"> </label>
+
+
+   <input type="submit" value="SUBMIT" class="customerSubmit">
+<div class="socialMedia"><b>Follow Us</b>
+
+    <a href="https://www.instagram.com/" target="_blank" class="instagram">
+      <img src="instagram.png" alt="instagram logo" class="instaImg"></a>
+    <a href="https://www.facebook.com" target="_blank" class="facebook">
+      <img src="facebook.png" alt="facebook logo" class= "fbImg"></a>
+    <a href="https://twitter.com" target="_blank" class="twitter">
+      <img src="twitter.png" alt="twitter logo" class="tweetImg"></a>
+
+
+</div>
+<div class="linkContainer">
+<p class="igLink">Instagram</p>
+<p class="fbLink">Facebook</p>
+<p class="twitterLink">Twitter</p>
+</div>
+</form>
+
+
+
+
+
+<section class="cardContainer3">
+  <div class="card">
+   <img src="quote2.jpg">
+
+  </div>
+  <div class="card">
+   <img src="quote.jpg">
+
+  </div>
+  <div class="card">
+   <img src="quote3.jpg">
+
+  </div>
+</section>
+<span class="copyright">Copyright 2022 Tamzimul Alam</span>
+
+</footer>
+
+</section>
+<!-------------------------------------Modal Window 1---------------------------->
+<section class="modalWindow">
+ <div class="modalBody">
+   <header class="modalHeader"> <a href="#img4" id="closeModal"><b>X</b></a></header>
+   <main class="modalInfo">
+     <div class="modalImg">
+       <img src="wthumbnail1.jpg">
+    <ul class=descriptionCart>
+      <li>Tea Green Suit</li>
+      <li>55% Worsted Wool</li>
+      <li>45% linen</li>
+      <li>Super 120</li>
+      <li>Fabric Wrinkle resistant</li>
+      <li>Color</li>
+      <li>Size</li>
+      <form>
+      <label>S<input type="radio" name="small" value="sizeSmall"> </label>
+      <label>M<input type="radio" name="medium" value="sizeMedium"> </label>
+      <label>L<input type="radio" name="large" value="sizeLarge"> </label>
+      </form>
+      <li>Quantity</li>
+      <li>$120.00</li>
+
+   </ul>
+     </div>
+     <form id="myForm1" action="sentProject2Form.html" method="post">
+     <h3>Select Card Type</h3>
+       <label title="Visa"><input type="radio" name="cardtype" value="credit card"> <img src="visa.png" id="visa"> </label>
+       <label title="Mastercard"><input type="radio" name="cardtype" value="credit card"><img src="mastercard.png" id="mastercard"> </label>
+       <label title="American Express"><input type="radio" name="cardtype" value="credit card"> <img src="Amex.png" id="amex"></label>
+
+    <input class="input2" type="text" name="username" value="" maxlength="16"
+              placeholder="16 digit card #">
+    <input class="input3" type="password" name="security" value=""
+              placeholder="3 digit security code" maxlength="3" id="mySecurityCode">
+       <a id="viewSecurityCode" title="Show Security Code"> <img src="showpassword.png" id="showPassword">
+       </a>
+
+       <label class="checkBox" id="checkBox"><input type="checkbox" name="terms" value="agreement"> Accept the terms and agreement</label>
+
+
+       <input type="submit" value="Place Your Order" class="input1" id="generateBtn">
+
+
+
+     </form>
+   </main>
+   <footer class="modalFooter">
+     <p class="returnPolicy"><b>Return Policy</b></p>
+     <ul class="bringToStore"> <b>Bring to a Store</b>
+       <li>Take your items to an open Oakly Store</li>
+       <li>Go to Express Services, Customer Service
+       or any register for assistance</li>
+       <li>Refunds can be expected in 5-7 business days</li>
+
+     </ul>
+
+     <ul class="dropOff"> <b>Drop Off Curbside</b>
+       <li>Start your return online</li>
+       <li>Drop off your items using contactless
+       Curbside Returns, available at any store</li>
+     </ul>
+
+     <ul class="sendByMail"> <b>Send By Mail</b>
+       <li>Start your return online</li>
+       <li>Ship your items with the prepaid shipping label</li>
+       <li>Returns are expected 7-10 business days</li>
+
+     </ul>
+  </footer>
+ </div>
+</section>
+
+<!----------------------------------Modal Window 2---------------------------->
+<section class="modalWindow2">
+ <div class="modalBody2">
+   <header class="modalHeader2"> <a href="#img5" id="closeModal2">X</a></header>
+   <main class="modalInfo2">
+     <div class="modalImg">
+       <img src="wthumbnail2.jpg">
+    <ul class=descriptionCart>
+      <li>Caramel Suit </li>
+      <li>55% Worsted Wool</li>
+      <li>45% linen</li>
+      <li>Super 120</li>
+      <li>Fabric Wrinkle resistant</li>
+      <li>Color</li>
+      <li>Size</li>
+      <form>
+      <label>S<input type="radio" name="small" value="sizeSmall"> </label>
+      <label>M<input type="radio" name="medium" value="sizeMedium"> </label>
+      <label>L<input type="radio" name="large" value="sizeLarge"> </label>
+      </form>
+      <li>Quantity</li>
+      <li>$150.00</li>
+
+   </ul>
+     </div>
+     <form id="myForm1" action="sentProject2Form.html" method="post">
+     <h3>Select Card Type</h3>
+       <label title="Visa"><input type="radio" name="cardtype" value="credit card"> <img src="visa.png" id="visa"> </label>
+       <label title="Mastercard"><input type="radio" name="cardtype" value="credit card"><img src="mastercard.png" id="mastercard"> </label>
+       <label title="American Express"><input type="radio" name="cardtype" value="credit card"> <img src="Amex.png" id="amex"></label>
+
+    <input class="input2" type="text" name="username" value="" maxlength="16"
+              placeholder="16 digit card #">
+    <input class="input3" type="password" name="security" value=""
+              placeholder="3 digit security code" maxlength="3" id="mySecurityCode">
+       <a id="viewSecurityCode" title="Show Security Code"> <img src="showpassword.png" id="showPassword">
+       </a>
+
+       <label class="checkBox" id="checkBox"><input type="checkbox" name="terms" value="agreement"> Accept the terms and agreement</label>
+
+
+       <input type="submit" value="Place Your Order" class="input1" id="generateBtn">
+
+
+
+     </form>
+
+   </main>
+   <footer class="modalFooter2">
+     <p class="returnPolicy"><b>Return Policy</b></p>
+     <ul class="bringToStore"> <b>Bring to a Store</b>
+       <li>Take your items to an open Oakly Store</li>
+       <li>Go to Express Services, Customer Service
+       or any register for assistance</li>
+       <li>Refunds can be expected in 5-7 business days</li>
+
+     </ul>
+
+     <ul class="dropOff"> <b>Drop Off Curbside</b>
+       <li>Start your return online</li>
+       <li>Drop off your items using contactless
+       Curbside Returns, available at any store</li>
+     </ul>
+
+     <ul class="sendByMail"> <b>Send By Mail</b>
+       <li>Start your return online</li>
+       <li>Ship your items with the prepaid shipping label</li>
+       <li>Returns are expected 7-10 business days</li>
+
+     </ul>
+
+   </footer>
+ </div>
+</section>
+
+<!-----------------------Modal Window 3------------------------>
+<section class="modalWindow3">
+ <div class="modalBody3">
+   <header class="modalHeader3"> <a href="#img6" id="closeModal3">X</a></header>
+   <main class="modalInfo3">
+     <div class="modalImg">
+       <img src="thumbnail2.jpg">
+     <ul class=descriptionCart>
+      <li>Pearl Gray Suit</li>
+      <li>55% Worsted Wool</li>
+      <li>45% linen</li>
+      <li>Super 120</li>
+      <li>Fabric Wrinkle resistant</li>
+      <li>Color</li>
+      <li>Size</li>
+      <form>
+      <label>S<input type="radio" name="small" value="sizeSmall"> </label>
+      <label>M<input type="radio" name="medium" value="sizeMedium"> </label>
+      <label>L<input type="radio" name="large" value="sizeLarge"> </label>
+      </form>
+      <li>Quantity</li>
+      <li>$150.00</li>
+
+     </ul>
+     </div>
+     <form id="myForm1" action="sentProject2Form.html" method="post">
+     <h3>Select Card Type</h3>
+       <label title="Visa"><input type="radio" name="cardtype" value="credit card"> <img src="visa.png" id="visa"> </label>
+       <label title="Mastercard"><input type="radio" name="cardtype" value="credit card"><img src="mastercard.png" id="mastercard"> </label>
+       <label title="American Express"><input type="radio" name="cardtype" value="credit card"> <img src="Amex.png" id="amex"></label>
+
+     <input class="input2" type="text" name="username" value="" maxlength="16"
+              placeholder="16 digit card #">
+     <input class="input3" type="password" name="security" value=""
+              placeholder="3 digit security code" maxlength="3" id="mySecurityCode">
+       <a id="viewSecurityCode" title="Show Security Code"> <img src="showpassword.png" id="showPassword">
+       </a>
+
+       <label class="checkBox" id="checkBox"><input type="checkbox" name="terms" value="agreement"> Accept the terms and agreement</label>
+
+
+       <input type="submit" value="Place Your Order" class="input1" id="generateBtn">
+
+
+
+     </form>
+
+
+
+
+   </main>
+   <footer class="modalFooter3">
+    <p class="returnPolicy"><b>Return Policy</b></p>
+    <ul class="bringToStore"> <b>Bring to a Store</b>
+      <li>Take your items to an open Oakly Store</li>
+      <li>Go to Express Services, Customer Service
+      or any register for assistance</li>
+      <li>Refunds can be expected in 5-7 business days</li>
+
+    </ul>
+
+    <ul class="dropOff"> <b>Drop Off Curbside</b>
+      <li>Start your return online</li>
+      <li>Drop off your items using contactless
+      Curbside Returns, available at any store</li>
+   </ul>
+
+    <ul class="sendByMail"> <b>Send By Mail</b>
+      <li>Start your return online</li>
+      <li>Ship your items with the prepaid shipping label</li>
+      <li>Returns are expected 7-10 business days</li>
+
+    </ul>
+
+   </footer>
+ </div>
+</section>
+<!-----------------------------Modal Window 4---------------------------->
+<section class="modalWindow4">
+ <div class="modalBody4">
+   <header class="modalHeader4"> <a href="#img4" id="closeModal4"><b>X</b></a></header>
+   <main class="modalInfo4">
+     <div class="modalImg">
+       <img src="thumbnail3.jpg">
+    <ul class=descriptionCart>
+
+
+      <li>Latest Trend on Fashion</li>
+      <li>Monthly Subscription</li>
+      <li>What celebrites are wear</li>
+      <li>Free Magazines</li>
+      <li>Coupons</li>
+      <li>Fashion Week/Events</li>
+      <li>$49.99/month</li>
+
+   </ul>
+     </div>
+     <form id="myForm1" action="sentProject2Form.html" method="post">
+     <h3>Select Card Type</h3>
+       <label title="Visa"><input type="radio" name="cardtype" value="credit card"> <img src="visa.png" id="visa"> </label>
+       <label title="Mastercard"><input type="radio" name="cardtype" value="credit card"><img src="mastercard.png" id="mastercard"> </label>
+       <label title="American Express"><input type="radio" name="cardtype" value="credit card"> <img src="Amex.png" id="amex"></label>
+
+    <input class="input2" type="text" name="username" value="" maxlength="16"
+              placeholder="16 digit card #">
+    <input class="input3" type="password" name="security" value=""
+              placeholder="3 digit security code" maxlength="3" id="mySecurityCode">
+       <a id="viewSecurityCode" title="Show Security Code"> <img src="showpassword.png" id="showPassword">
+       </a>
+
+       <label class="checkBox" id="checkBox"><input type="checkbox" name="terms" value="agreement"> Accept the terms and agreement</label>
+
+
+       <input type="submit" value="Place Your Order" class="input1" id="generateBtn">
+
+
+
+     </form>
+   </main>
+   <footer class="modalFooter4">
+     <p class="returnPolicy"><b>Return Policy</b></p>
+     <ul class="bringToStore"> <b>Bring to a Store</b>
+       <li>Take your items to an open Oakly Store</li>
+       <li>Go to Express Services, Customer Service
+       or any register for assistance</li>
+       <li>Refunds can be expected in 5-7 business days</li>
+
+     </ul>
+
+     <ul class="dropOff"> <b>Drop Off Curbside</b>
+       <li>Start your return online</li>
+       <li>Drop off your items using contactless
+       Curbside Returns, available at any store</li>
+     </ul>
+
+     <ul class="sendByMail"> <b>Send By Mail</b>
+       <li>Start your return online</li>
+       <li>Ship your items with the prepaid shipping label</li>
+       <li>Returns are expected 7-10 business days</li>
+
+     </ul>
+  </footer>
+ </div>
+</section>
+
+<!-------------------------Modal Window 5---------------------->
+<section class="modalWindow5">
+ <div class="modalBody5">
+   <header class="modalHeader5"> <a href="#img4" id="closeModal5"><b>X</b></a></header>
+   <main class="modalInfo5">
+     <div class="modalImg">
+       <img src="greenheels.jpg">
+    <ul class=descriptionCart>
+      <li>Green Heels</li>
+      <li>55% Worsted Wool</li>
+      <li>45% linen</li>
+      <li>Super 120</li>
+      <li>Fabric Wrinkle resistant</li>
+      <li>Color</li>
+      <li>Size</li>
+      <form>
+      <label>S<input type="radio" name="small" value="sizeSmall"> </label>
+      <label>M<input type="radio" name="medium" value="sizeMedium"> </label>
+      <label>L<input type="radio" name="large" value="sizeLarge"> </label>
+      </form>
+      <li>Quantity</li>
+      <li>$120.00</li>
+
+   </ul>
+     </div>
+     <form id="myForm1" action="sentProject2Form.html" method="post">
+     <h3>Select Card Type</h3>
+       <label title="Visa"><input type="radio" name="cardtype" value="credit card"> <img src="visa.png" id="visa"> </label>
+       <label title="Mastercard"><input type="radio" name="cardtype" value="credit card"><img src="mastercard.png" id="mastercard"> </label>
+       <label title="American Express"><input type="radio" name="cardtype" value="credit card"> <img src="Amex.png" id="amex"></label>
+
+    <input class="input2" type="text" name="username" value="" maxlength="16"
+              placeholder="16 digit card #">
+    <input class="input3" type="password" name="security" value=""
+              placeholder="3 digit security code" maxlength="3" id="mySecurityCode">
+       <a id="viewSecurityCode" title="Show Security Code"> <img src="showpassword.png" id="showPassword">
+       </a>
+
+       <label class="checkBox" id="checkBox"><input type="checkbox" name="terms" value="agreement"> Accept the terms and agreement</label>
+
+
+       <input type="submit" value="Place Your Order" class="input1" id="generateBtn">
+
+
+
+     </form>
+   </main>
+   <footer class="modalFooter5">
+     <p class="returnPolicy"><b>Return Policy</b></p>
+     <ul class="bringToStore"> <b>Bring to a Store</b>
+       <li>Take your items to an open Oakly Store</li>
+       <li>Go to Express Services, Customer Service
+       or any register for assistance</li>
+       <li>Refunds can be expected in 5-7 business days</li>
+
+     </ul>
+
+     <ul class="dropOff"> <b>Drop Off Curbside</b>
+       <li>Start your return online</li>
+       <li>Drop off your items using contactless
+       Curbside Returns, available at any store</li>
+     </ul>
+
+     <ul class="sendByMail"> <b>Send By Mail</b>
+       <li>Start your return online</li>
+       <li>Ship your items with the prepaid shipping label</li>
+       <li>Returns are expected 7-10 business days</li>
+
+     </ul>
+  </footer>
+ </div>
+</section>
+ <!-----------------------Modal Window 6 --------------------------------------->
+ <section class="modalWindow6">
+  <div class="modalBody6">
+    <header class="modalHeader6"> <a href="#img4" id="closeModal6"><b>X</b></a></header>
+    <main class="modalInfo6">
+      <div class="modalImg">
+        <img src="watch.jpg">
+     <ul class=descriptionCart>
+       <li>Watch</li>
+       <li>55% Worsted Wool</li>
+       <li>45% linen</li>
+       <li>Super 120</li>
+       <li>Fabric Wrinkle resistant</li>
+       <li>Color</li>
+       <li>Size</li>
+       <form>
+       <label>S<input type="radio" name="small" value="sizeSmall"> </label>
+       <label>M<input type="radio" name="medium" value="sizeMedium"> </label>
+       <label>L<input type="radio" name="large" value="sizeLarge"> </label>
+       </form>
+       <li>Quantity</li>
+       <li>$120.00</li>
+
+    </ul>
+      </div>
+      <form id="myForm1" action="sentProject2Form.html" method="post">
+      <h3>Select Card Type</h3>
+        <label title="Visa"><input type="radio" name="cardtype" value="credit card"> <img src="visa.png" id="visa"> </label>
+        <label title="Mastercard"><input type="radio" name="cardtype" value="credit card"><img src="mastercard.png" id="mastercard"> </label>
+        <label title="American Express"><input type="radio" name="cardtype" value="credit card"> <img src="Amex.png" id="amex"></label>
+
+     <input class="input2" type="text" name="username" value="" maxlength="16"
+               placeholder="16 digit card #">
+     <input class="input3" type="password" name="security" value=""
+               placeholder="3 digit security code" maxlength="3" id="mySecurityCode">
+        <a id="viewSecurityCode" title="Show Security Code"> <img src="showpassword.png" id="showPassword">
+        </a>
+
+        <label class="checkBox" id="checkBox"><input type="checkbox" name="terms" value="agreement"> Accept the terms and agreement</label>
+
+
+        <input type="submit" value="Place Your Order" class="input1" id="generateBtn">
+
+
+
+      </form>
+    </main>
+    <footer class="modalFooter6">
+      <p class="returnPolicy"><b>Return Policy</b></p>
+      <ul class="bringToStore"> <b>Bring to a Store</b>
+        <li>Take your items to an open Oakly Store</li>
+        <li>Go to Express Services, Customer Service
+        or any register for assistance</li>
+        <li>Refunds can be expected in 5-7 business days</li>
+
+      </ul>
+
+      <ul class="dropOff"> <b>Drop Off Curbside</b>
+        <li>Start your return online</li>
+        <li>Drop off your items using contactless
+        Curbside Returns, available at any store</li>
+      </ul>
+
+      <ul class="sendByMail"> <b>Send By Mail</b>
+        <li>Start your return online</li>
+        <li>Ship your items with the prepaid shipping label</li>
+        <li>Returns are expected 7-10 business days</li>
+
+      </ul>
+   </footer>
+  </div>
+ </section>
+
+<!---------------------------------login Window------------------------------------------>
+<section class="loginWindow">
+ <div class="loginBody">
+   <header class="loginHeader"> <a href="#" id="closeloginModal">X</a></header>
+   <main class="loginInfo">Type in username and password to log in
+   <form id="loginForm">
+     <input class="loginInput" type="text" name="username" value="" maxlength="20"
+            placeholder="Username">
+     <input class="loginInput2" type="password" name="security" value=""
+            placeholder="Password" maxlength="20" id="myPassCode">
+     <a id="viewPassCode" title="Show Passcode"> <img src="showpassword.png" id="passwordEye"></a>
+     <label class="loginCheckBox" id="checkBox"><input type="checkbox" name="terms" value="agreement"> Save Password</label>
+     <input type="submit" value="Login" class="loginSubmit">
+  </form>
+   </main>
+   <footer class="loginFooter">MODAL FOOTER</footer>
+ </div>
+</section>
+
+    <script type="text/javascript" src="project2.js">
+
+    </script>
+  </body>
+</html>
+
+<!----
+
+
+
+
+================================================================
+<form id="sentProject2Form.html" method="post">
+<h3>Select Card Type</h3>
+  <label title="Visa"><input type="radio" name="cardtype" value="credit card"> <img src="visa.png" id="visa"> </label>
+  <label title="Mastercard"><input type="radio" name="cardtype" value="credit card"><img src="mastercard.png" id="mastercard"> </label>
+  <label title="American Express"><input type="radio" name="cardtype" value="credit card"> <img src="Amex.png" id="amex"></label>
+
+<input class="input2" type="text" name="username" value="" maxlength="16"
+         placeholder="16 digit card #">
+  <input class="input3" type="password" name="security" value=""
+         placeholder="3 digit security code" maxlength="3" id="mySecurityCode">
+  <a id="viewSecurityCode" title="Show Security Code"> <img src="showpassword.png" id="showPassword">
+  </a>
+
+  <label class="checkBox" id="checkBox"><input type="checkbox" name="terms" value="agreement"> Accept the terms and agreement</label>
+
+
+  <input type="submit" value="Place Your Order" class="input1">
+
+
+
+</form>
+
+
+<section class="cardContainer">
+  <div class="card">
+   <img src="thumbnail1.jpg">
+   <p>Business Professional</p>
+  </div>
+  <div class="card">
+   <img src="thumbnail2.jpg">
+   <p>Business Professional</p>
+  </div>
+  <div class="card">
+   <img src="thumbnail3.jpg">
+   <p>Business Professional</p>
+  </div>
+</section>
+<section class="cardContainer2">
+  <div class="card">
+   <img src="wthumbnail1.jpg" >
+   <p>Business Professional</p>
+  </div>
+  <div class="card">
+   <img src="wthumbnail2.jpg" >
+   <p>Business Professional</p>
+  </div>
+  <div class="card">
+   <img src="wthumbnail3.jpg">
+   <p>Business Professional</p>
+  </div>
+</section>
+
+<form>
+<h3>Select Card Type</h3>
+
+  <label title="Visa"><input type="radio" name="cardtype" value="credit card"> <img src="visa.png" id="visa"> </label>
+  <label title="Mastercard"><input type="radio" name="cardtype" value="credit card"><img src="mastercard.png" id="mastercard"> </label>
+  <label title="American Express"><input type="radio" name="cardtype" value="credit card"> <img src="Amex.png" id="amex"></label>
+
+  <input class="input2" type="text" name="username" value="" maxlength="16"
+         placeholder="16 digit card #">
+  <input class="input3" type="password" name="security" value=""
+         placeholder="3 digit security code" maxlength="3" id="mySecurityCode">
+  <a id="viewSecurityCode" title="Show Security Code"> <img src="showpassword.png" id="showPassword"></a>
+
+  <label class="checkBox" id="checkBox"><input type="checkbox" name="terms" value="agreement"> Accept the terms and agreement</label>
+
+
+  <input type="submit" value="Place Your Order" class="input1">
+
+</form>
